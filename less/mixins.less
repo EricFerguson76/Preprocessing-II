@@ -5,3 +5,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.btn() {
+  width: 100%;
+  @button-bg: @eastern-blue;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  height: 45px;
+  color: @white;
+
+  &:hover {
+    background-color: lighten(teal, 5%);
+  }
+}
