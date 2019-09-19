@@ -1,1 +1,23 @@
 // Mixins in here
+.flexbox() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-btn() {
+  width: 90%;
+  .flexbox();
+  background: @eastern-blue;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  cursor: pointer;
+  height: 45px;
+  color: @white;
+
+  &:hover {
+    background-color: lighten(teal, 5%);
+  }
+}
